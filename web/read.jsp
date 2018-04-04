@@ -11,5 +11,10 @@
     <body>
         <h1>Barca Squad</h1>
         <%= table %>
+        
+        <br><br>
+        
+        <a href ="add">Add A New Player</a>
+        
     </body>
 </html>
