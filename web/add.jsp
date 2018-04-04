@@ -11,15 +11,30 @@
         
         <form name="addForm" action="addPlayer" method="get">
             
-            <label>Player Name:</label>
-            <input type="text" name="name" value="" />
+            <table class="add"> 
+                <tr>
+                    <td class="right">Player ID:</td>
+                    <td><input type="text" name="name" value="" /></td>
+                </tr> 
+                <tr>
+                    <td class="right">Player Name:</td>
+                    <td><input type="text" name="name" value="" /></td>
+                </tr>
+                <tr>
+                    <td class="right">Player Position:</td>
+                    <td><input type="text" name="position" value="" /></td>
+                </tr>
+                <tr>
+                    <td class="right">Age::</td>
+                    <td><input type="text" name="age" value="" /></td>
+                </tr>
+                <tr>
+                    <td class="right">Age::</td>
+                    <td><input type="text" name="age" value="" /></td>
+                </tr>
+            </table>
             <br>
-            <label>Player Position:</label>
-            <input type="text" name="position" value="" />
-            <br>
-            <label>Age:</label>
-            <input type="text" name="age" value="" />
-            <br>
+            <input type="reset" name="reset" value="Clear"/>
             <input type="submit" name="submit" value="Submit" />
         </form>
         
