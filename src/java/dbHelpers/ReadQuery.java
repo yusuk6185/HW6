@@ -63,8 +63,6 @@ public class ReadQuery {
         
         String table = "";
         
-        table += "<table border=1>";
-        
         try {
             while(this.results.next()){
                 
@@ -73,7 +71,13 @@ public class ReadQuery {
                 barca.setPlayerName(this.results.getString("playerName"));
                 barca.setPlayerPosition(this.results.getString("playerPosition"));
                 barca.setAge(this.results.getInt("age"));
-                
+                table += "<tr>";
+                table += "<th>PlayerID</th>";
+                table += "<th>PlayerName</th>";
+                table += "<th>PlayerPosition</th>";
+                table += "<th>Age</th>";
+                table += "</tr>";
+                        
                 table += "<tr>";
                 table += "<td>";
                 table += barca.getPlayerID();
@@ -92,7 +96,7 @@ public class ReadQuery {
                 table += "</td>";
                                         
                 table += "<td>";
-                table += "<a href=delete?playerID=" + barca.getPlayerID() + ">Delete </a>";
+                table += "<a href=update?playerID=" + barca.getPlayerID() +"> Update </a>" + "<a href=delete?playerID=" + barca.getPlayerID() + ">Delete </a>";
                 table += "</td>";
 
                 table += "</tr>";
