@@ -90,7 +90,11 @@ public class ReadQuery {
                 table += "<td>";
                 table += barca.getAge();
                 table += "</td>";
-                                                                                
+                                        
+                table += "<td>";
+                table += "<a href=delete?playerID=" + barca.getPlayerID() + ">Delete </a>";
+                table += "</td>";
+
                 table += "</tr>";
             }
         } catch (SQLException ex) {
